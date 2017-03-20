@@ -13,7 +13,57 @@
     </head>
 
     <body>
-    	<h1>Walk-A-Thon Donation Information</h1>
+    	<!-- <h1>Walk-A-Thon Donation Information</h1> -->
+
+        <div class="form-group row">
+          <!-- <div class="col-2">
+            <input type="text" class="form-control" placeholder=".col-2">
+          </div>
+          <div class="col-3">
+            <input type="text" class="form-control" placeholder=".col-3">
+          </div> -->
+
+          <!-- <div class="col-4"> -->
+          <div class="col-6">
+            <h1>Walk-A-Thon Donation Information</h1>
+            <!-- <input type="text" class="form-control" placeholder=".col-4"> -->
+            <!-- <label for="example-text-input" class="col-2 col-form-label">Your Name:</label> -->
+            <div class="form-group">
+                <label for="formGroupNameInput" class="col-sm-3 col-form-label">Your Name:</label>
+                <div class="col-sm-9">
+                    <!-- <input class="form-control" type="text" value="Name" id="donorName"> -->
+                    <input class="form-control" type="text" id="donorName formGroupNameInput" placeholder="Your Name">
+                </div>
+            </div>
+
+
+            <!-- <label for="example-email-input" class="col-2 col-form-label">Email:</label> -->
+            <div class="form-group">
+                <label for="formGroupEmailInput" class="col-3 col-form-label">Email:</label>
+                <div class="col-9">
+                    <input class="form-control" type="email" value="youremail@example.com" id="donorEmail formGroupEmailInput">
+                </div>
+            </div>
+
+            <!-- <label for="example-number-input" class="col-2 col-form-label">Number</label> -->
+            <div class="form-group">
+                <label for="formGroupPledgeInput" class="col-3 col-form-label">Pledge:</label>
+                <div class="col-9">
+                    <input class="form-control" type="number" value="42" id="pledgeAmount formGroupPledgeInput">
+                </div>
+            </div>
+
+            <select class="custom-select">
+              <option selected>Specify Pledge Type</option>
+              <option value="totalPledge">Total Pledge Amount</option>
+              <option value="perLap">Pledge Per Lap</option>
+            </select>
+
+            <button type="button" id="donateButton" class="btn btn-primary">Donate</button>
+            <button type="button" id="cancelButton" class="btn btn-primary">Cancel</button>
+
+          </div>
+        </div>
 
     	<!-- <button type="submit" id="clear"  value="Clear">Clear</button> -->
 
