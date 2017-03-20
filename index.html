@@ -24,13 +24,13 @@
           </div> -->
 
           <!-- <div class="col-4"> -->
-          <div class="col-6">
+          <div class="col-12">
             <h1>Walk-A-Thon Donation Information</h1>
             <!-- <input type="text" class="form-control" placeholder=".col-4"> -->
             <!-- <label for="example-text-input" class="col-2 col-form-label">Your Name:</label> -->
             <div class="form-group">
-                <label for="formGroupNameInput" class="col-sm-3 col-form-label">Your Name:</label>
-                <div class="col-sm-9">
+                <label for="formGroupNameInput" class="col-sm-2 col-form-label">Your Name:</label>
+                <div class="col-sm-4">
                     <!-- <input class="form-control" type="text" value="Name" id="donorName"> -->
                     <input class="form-control" type="text" id="donorName formGroupNameInput" placeholder="Your Name">
                 </div>
@@ -39,25 +39,27 @@
 
             <!-- <label for="example-email-input" class="col-2 col-form-label">Email:</label> -->
             <div class="form-group">
-                <label for="formGroupEmailInput" class="col-3 col-form-label">Email:</label>
-                <div class="col-9">
+                <label for="formGroupEmailInput" class="col-sm-2 col-form-label">Email:</label>
+                <div class="col-sm-4">
                     <input class="form-control" type="email" value="youremail@example.com" id="donorEmail formGroupEmailInput">
                 </div>
             </div>
 
             <!-- <label for="example-number-input" class="col-2 col-form-label">Number</label> -->
             <div class="form-group">
-                <label for="formGroupPledgeInput" class="col-3 col-form-label">Pledge:</label>
-                <div class="col-9">
+                <label for="formGroupPledgeInput" class="col-sm-2 col-form-label">Pledge:</label>
+                <div class="col-sm-4">
                     <input class="form-control" type="number" value="42" id="pledgeAmount formGroupPledgeInput">
                 </div>
             </div>
 
-            <select class="custom-select">
-              <option selected>Specify Pledge Type</option>
-              <option value="totalPledge">Total Pledge Amount</option>
-              <option value="perLap">Pledge Per Lap</option>
-            </select>
+            <div class="col-6 form-group">
+                <select class="custom-select">
+                  <option selected>Specify Pledge Type</option>
+                  <option value="totalPledge">Total Pledge Amount</option>
+                  <option value="perLap">Pledge Per Lap</option>
+                </select>
+            </div>
 
             <button type="button" id="donateButton" class="btn btn-primary">Donate</button>
             <button type="button" id="cancelButton" class="btn btn-primary">Cancel</button>
@@ -65,7 +67,40 @@
           </div>
         </div>
 
-    	<!-- <button type="submit" id="clear"  value="Clear">Clear</button> -->
+        <table class="table table table-striped table-sm">
+          <thead class="thead-default">
+            <tr>
+              <th>#</th>
+              <th>Donor Name</th>
+              <th>Donor Email</th>
+              <th>Pledge Amount</th>
+              <th>Total or Per Lap</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Mark Miller</td>
+              <td>Mark@email.com</td>
+              <td>$99.99</td>
+              <td>Total Pledge</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Jacob Thornton</td>
+              <td>Jacob@email.com</td>
+              <td>$25.00</td>
+              <td>Total Pledge</td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>Larry Bird</td>
+              <td>Larry@Bird.com</td>
+              <td>$5.00</td>
+              <td>Per Lap</td>
+            </tr>
+          </tbody>
+        </table>
 
     	<!-- jQuery first, then Tether, then Bootstrap JS. -->
     	<!-- Bootstrap Required ??? All ???  -->
