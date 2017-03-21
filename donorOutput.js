@@ -1,7 +1,7 @@
 
 var DonorsManager = (function (oldManager) {
 
-	oldManager.writeToDOM =  function (messageArray) {
+	oldManager.writeToDOM =  function (donorsArray) {
 		console.log("in writeToDOM");
 		// var messageElement = "";
 		// for (var i = 0; i < messageArray.length; i++) {

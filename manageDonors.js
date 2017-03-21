@@ -2,7 +2,7 @@
 var DonorsManager = (function (oldManager) {
 
 	// Object array of Donors
-	var donorArray = [
+	var donorsArray = [
 	  {
 	    name: "John Doe",
 	    email: "johndoe@me.com",
@@ -25,7 +25,7 @@ var DonorsManager = (function (oldManager) {
 		// oldChatty.writeToDOM(message);
 	};
 
-	oldManager.getDonors = function(input){
+	oldManager.getDonors = function(){
 		console.log("in getDonors");
 		// var message = oldChatty.getMessageArray();
 		// message.push(input);
