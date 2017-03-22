@@ -1,48 +1,38 @@
 
-console.log("writing to console");
-
-// var userInput = document.getElementById("userForm");
-// var thisDonorName = document.getElementById("formGroupNameInput");
-// var thisDonorEmail = document.getElementById("formGroupEmailInput");
-// var thisDonorPledge = document.getElementById("formGroupPledgeInput");
-// var thisDonorPledgeType = document.getElementById("pledgeSelect");
-// var thisDonorInfo = [];
+var thisDonorName = document.getElementById("formGroupNameInput");
+var thisDonorEmail = document.getElementById("formGroupEmailInput");
+var thisDonorPledge = document.getElementById("formGroupPledgeInput");
+var thisDonorPledgeType = document.getElementById("pledgeSelect");
 
 //****************************************************
-// Event handler for <Donate> button
+// Event handlers for <Donate> and <Cancel> buttons
 //****************************************************
 var donateButton = document.getElementById("donateButton");
 var cancelButton = document.getElementById("cancelButton");
 
+
 //****************************************************
-// Function captures the information entered on the 
-// user input screen, writes it to <thisDonorInfo> array,
-// passes that array to <addDonor> to add to the private 
-// <donorsArray>
+// <donateButton> event handler calls <processDonorInput> 
+// to process the information entered by the Donor 
+// on the input screen
 //****************************************************
 donateButton.addEventListener("click", function(event){
 
 	DonorsManager.processDonorInput(event);
-	// thisDonorInfo[0] = thisDonorName.value;
-	// thisDonorInfo[1] = thisDonorEmail.value;
-	// thisDonorInfo[2] = thisDonorPledge.value;
-	// thisDonorInfo[3] = getDonationType();
-
-    // DonorsManager.addDonor(thisDonorInfo); //add this Donor's information to donorArray
 });
 
 
-// function getDonationType() {
+//****************************************************
+// <cancelButton> event handler clears the user input
+// fields, returning them to their <placeholder> states
+//****************************************************
+cancelButton.addEventListener("click", function(event){
 
-// 	if (thisDonorPledgeType.options.selectedIndex === 1) { // "Total Pledge Amount"
-// 		return "Total";
-
-// 	} else { "Pledge Per Lap"
-// 		return "Per Lap";
-// 	} // end <else>
-// } // end <getDonationType>
-
-
+	thisDonorName.value = "";
+	thisDonorEmail.value = "";
+	thisDonorPledge.value = "";
+	thisDonorPledgeType.options.selectedIndex = 0;
+});
 
 
 

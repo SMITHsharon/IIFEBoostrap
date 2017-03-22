@@ -11,7 +11,7 @@ var DonorsManager = (function (oldManager) {
 	// function reads the information entered by the Donor
 	// on input screen and adds it to <thisDonorInfoArray>
 	// (a single donor array); 
-	// then calls <addDonor> to add this Donor to <donorsArray>
+	// then calls <addDonor> which adds this Donor to <donorsArray>
 	// (object array containing information for all donors)
 	oldManager.processDonorInput = function(input){
 		console.log("in processDonorInput");
