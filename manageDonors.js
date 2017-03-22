@@ -18,8 +18,16 @@ var DonorsManager = (function (oldManager) {
 	  },
 	];
 	
-	oldManager.addDonor = function(input){
+	oldManager.addDonor = function(singleDonorArray){
 		console.log("in addDonor");
+		console.log("<singleDonorArry> parameter", singleDonorArray);
+
+		// var thisForm = document.getElementById("userForm");
+		// console.log("<thisForm :: ", thisForm);
+		// console.log("thisForm.childNodes :: ", thisForm.childNodes);
+		// console.log("thisForm.childNodes.childNodes :: ", thisForm.childNodes.childNodes[1]);
+		// var thisName = document.getElementsByClassName("donorName").value;
+		// console.log("<donorName> :: ", donorName);
 		// var message = oldChatty.getMessageArray();
 		// message.push(input);
 		// oldChatty.writeToDOM(message);

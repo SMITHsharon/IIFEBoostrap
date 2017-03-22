@@ -32,7 +32,7 @@
                 <label for="formGroupNameInput" class="col-sm-2 col-form-label">Your Name:</label>
                 <div class="col-sm-4">
                     <!-- <input class="form-control" type="text" value="Name" id="donorName"> -->
-                    <input class="form-control" type="text" id="donorName formGroupNameInput" placeholder="Your Name">
+                    <input class="form-control" type="text" id="formGroupNameInput" placeholder="Your Name">
                 </div>
             </div>
 
@@ -41,7 +41,7 @@
             <div class="form-group">
                 <label for="formGroupEmailInput" class="col-sm-2 col-form-label">Email:</label>
                 <div class="col-sm-4">
-                    <input class="form-control" type="email" value="youremail@example.com" id="donorEmail formGroupEmailInput">
+                    <input class="form-control donorEmail" type="email" value="youremail@example.com" id="formGroupEmailInput">
                 </div>
             </div>
 
@@ -49,12 +49,12 @@
             <div class="form-group">
                 <label for="formGroupPledgeInput" class="col-sm-2 col-form-label">Pledge:</label>
                 <div class="col-sm-4">
-                    <input class="form-control" type="number" value="42" id="pledgeAmount formGroupPledgeInput">
+                    <input class="form-control pledgeAmount" type="number" value="42" id="formGroupPledgeInput">
                 </div>
             </div>
 
             <div class="col-6 form-group">
-                <select class="custom-select">
+                <select id="pledgeSelect" class="custom-select">
                   <option selected>Specify Pledge Type</option>
                   <option value="totalPledge">Total Pledge Amount</option>
                   <option value="perLap">Pledge Per Lap</option>
