@@ -32,6 +32,7 @@ console.log("in addDonor");
 		} );
 
 console.log("donorsArray :: ", donorsArray);
+		DonorsManager.writeToDOM(donorsArray); // writes all Donors information to a table
 	};
 
 

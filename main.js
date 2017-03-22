@@ -1,4 +1,10 @@
 
+// initialize the system with the current 
+// contents of <donorsArray>
+// var donors = DonorsManager.getDonors();
+// console.log("donors :: ", donors);
+DonorsManager.writeToDOM(DonorsManager.getDonors());
+
 var thisDonorName = document.getElementById("formGroupNameInput");
 var thisDonorEmail = document.getElementById("formGroupEmailInput");
 var thisDonorPledge = document.getElementById("formGroupPledgeInput");

@@ -33,9 +33,13 @@ var DonorsManager = (function (oldManager) {
 		if (thisDonorPledgeType.options.selectedIndex === 1) { // "Total Pledge Amount"
 			return "Total";
 
-		} else { "Pledge Per Lap"
+		} else if (thisDonorPledgeType.options.selectedIndex === 2) { //"Pledge Per Lap"
 			return "Per Lap";
-		} // end <else>
+
+		} else { // user did not specify / select "Total" as default
+			return "Total";
+
+		}// end <else>
 	}; // end <getDonationType>
 
 	return oldManager;
