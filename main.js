@@ -1,12 +1,12 @@
 
 console.log("writing to console");
 
-var userInput = document.getElementById("userForm");
-var thisDonorName = document.getElementById("formGroupNameInput");
-var thisDonorEmail = document.getElementById("formGroupEmailInput");
-var thisDonorPledge = document.getElementById("formGroupPledgeInput");
-var thisDonorPledgeType = document.getElementById("pledgeSelect");
-var thisDonorInfo = [];
+// var userInput = document.getElementById("userForm");
+// var thisDonorName = document.getElementById("formGroupNameInput");
+// var thisDonorEmail = document.getElementById("formGroupEmailInput");
+// var thisDonorPledge = document.getElementById("formGroupPledgeInput");
+// var thisDonorPledgeType = document.getElementById("pledgeSelect");
+// var thisDonorInfo = [];
 
 //****************************************************
 // Event handler for <Donate> button
@@ -22,24 +22,25 @@ var cancelButton = document.getElementById("cancelButton");
 //****************************************************
 donateButton.addEventListener("click", function(event){
 
-	thisDonorInfo[0] = thisDonorName.value;
-	thisDonorInfo[1] = thisDonorEmail.value;
-	thisDonorInfo[2] = thisDonorPledge.value;
-	thisDonorInfo[3] = getDonationType();
+	DonorsManager.processDonorInput(event);
+	// thisDonorInfo[0] = thisDonorName.value;
+	// thisDonorInfo[1] = thisDonorEmail.value;
+	// thisDonorInfo[2] = thisDonorPledge.value;
+	// thisDonorInfo[3] = getDonationType();
 
-    DonorsManager.addDonor(thisDonorInfo); //add this Donor's information to donorArray
+    // DonorsManager.addDonor(thisDonorInfo); //add this Donor's information to donorArray
 });
 
 
-function getDonationType() {
+// function getDonationType() {
 
-	if (thisDonorPledgeType.options.selectedIndex === 1) { // "Total Pledge Amount"
-		return "Total";
+// 	if (thisDonorPledgeType.options.selectedIndex === 1) { // "Total Pledge Amount"
+// 		return "Total";
 
-	} else { "Pledge Per Lap"
-		return "Per Lap";
-	} // end <else>
-} // end <getDonationType>
+// 	} else { "Pledge Per Lap"
+// 		return "Per Lap";
+// 	} // end <else>
+// } // end <getDonationType>
 
 
 

@@ -35,12 +35,13 @@ console.log("donorsArray :: ", donorsArray);
 	};
 
 
-	oldManager.getDonors = function(){
+	// function returns <donorsArray> whatever function calls for it
+	oldManager.getDonors = function() {
 		console.log("in getDonors");
-		// var message = oldChatty.getMessageArray();
-		// message.push(input);
-		// oldChatty.writeToDOM(message);
+		
+		return donorsArray;
 	};
+
 
 	return oldManager;
 
