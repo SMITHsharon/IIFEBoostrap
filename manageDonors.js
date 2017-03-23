@@ -22,7 +22,6 @@ var DonorsManager = (function (oldManager) {
 	// function adds information entered by new Donor
 	// on input screen to <donorsArray>
 	oldManager.addDonor = function(singleDonorArray){
-console.log("in addDonor");
 
 		donorsArray.push( { 
 			"name" : singleDonorArray[0], 
@@ -31,14 +30,12 @@ console.log("in addDonor");
 			"type" : singleDonorArray[3]
 		} );
 
-console.log("donorsArray :: ", donorsArray);
 		DonorsManager.writeToDOM(donorsArray); // writes all Donors information to a table
 	};
 
 
-	// function returns <donorsArray> whatever function calls for it
+	// function RETURNs <donorsArray> to whatever function calls for it
 	oldManager.getDonors = function() {
-		console.log("in getDonors");
 		
 		return donorsArray;
 	};

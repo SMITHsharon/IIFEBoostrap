@@ -3,8 +3,17 @@ var DonorsManager = (function (oldManager) {
 
 	var donorOutputTable = document.getElementById("donorOutput");
 
+	var thisDonorNameForClear = document.getElementById("formGroupNameInput");
+	var thisDonorEmailForClear = document.getElementById("formGroupEmailInput");
+	var thisDonorPledgeForClear = document.getElementById("formGroupPledgeInput");
+	var thisDonorPledgeTypeForReset = document.getElementsByName("inlineRadioOptions");
+
+
+	// function writes all Donor information 
+	// that is stored in the private <donorsArray>
+	// to the DOM
+	// then clears the user input fields to the placeholder state
 	oldManager.writeToDOM =  function (donorsArray) {
-		console.log("in writeToDOM");
 		
 		// var tableHeadString =  `<div class="col-6"><h4>Donor Pledges</h4>`;
 		// var tableHeadString =  `<div class="col-md-6"><h4>Donor Pledges</h4>`;
@@ -35,6 +44,12 @@ var DonorsManager = (function (oldManager) {
 		}
 		  	donorOutputTable.innerHTML = tableHeadString + donorString + `</tbody>
           </table></div>`;
+
+        // clear the user input fields
+        thisDonorNameForClear.value = "";
+		thisDonorEmailForClear.value = "";
+		thisDonorPledgeForClear.value = "";
+		thisDonorPledgeTypeForReset[0].checked; // does not restore ? 
 
 	};
 

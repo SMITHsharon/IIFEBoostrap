@@ -8,7 +8,8 @@ DonorsManager.writeToDOM(DonorsManager.getDonors());
 var thisDonorName = document.getElementById("formGroupNameInput");
 var thisDonorEmail = document.getElementById("formGroupEmailInput");
 var thisDonorPledge = document.getElementById("formGroupPledgeInput");
-var thisDonorPledgeType = document.getElementById("pledgeSelect");
+var thisDonorPledgeType = document.getElementsByName("inlineRadioOptions");
+
 
 //****************************************************
 // Event handlers for <Donate> and <Cancel> buttons
@@ -37,7 +38,7 @@ cancelButton.addEventListener("click", function(event){
 	thisDonorName.value = "";
 	thisDonorEmail.value = "";
 	thisDonorPledge.value = "";
-	thisDonorPledgeType.options.selectedIndex = 0;
+	thisDonorPledgeType[0].checked; // does not restore ? 
 });
 
 
