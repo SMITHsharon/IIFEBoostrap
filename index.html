@@ -3,7 +3,9 @@
 	<head>
 		<!-- Required meta tags -->
 		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 
     	<title>NSS IIFE Bootstrap Exercise</title>
 
@@ -13,106 +15,48 @@
     </head>
 
     <body>
-    	<!-- <h1>Walk-A-Thon Donation Information</h1> -->
+    	<h1>Walk-A-Thon Donation Information</h1>
+        <div class="container class col-md-12">
+          <div class="form-group row">
 
-        <div class="form-group row">
-          <!-- <div class="col-2">
-            <input type="text" class="form-control" placeholder=".col-2">
-          </div>
-          <div class="col-3">
-            <input type="text" class="form-control" placeholder=".col-3">
-          </div> -->
+            <div id="donorOutput" class="form-group col-md-6 table-bordered"></div>
 
-          <!-- <div class="col-4"> -->
-          <div id="userForm" class="col-12">
-            <h1>Walk-A-Thon Donation Information</h1>
-            <!-- <input type="text" class="form-control" placeholder=".col-4"> -->
-            <!-- <label for="example-text-input" class="col-2 col-form-label">Your Name:</label> -->
-            <div class="form-group">
-                <label for="formGroupNameInput" class="col-sm-2 col-form-label">Your Name:</label>
-                <div class="col-sm-4">
-                    <!-- <input class="form-control" type="text" value="Name" id="donorName"> -->
-                    <input class="form-control" type="text" id="formGroupNameInput" placeholder="Your Name">
+            <div id="userForm" class="col-md-6 table-bordered">
+
+              <h4>Donor Information</h4>
+
+              <div class="form-group">
+
+                <input id="formGroupNameInput" class="text-input alpha-inputs" placeholder="Your Name">
+
+                <input type="email" id="formGroupEmailInput" class="donorEmail text-input alpha-inputs" placeholder="youremail@here.com">
+
+                $<input type="number" id="formGroupPledgeInput" class="pledgeAmount text-input alpha-inputs" placeholder="Pledge Amount">
+
+                <div class="col-sm-3">
+                  <label>
+                    <input type="radio" name="inlineRadioOptions" value="totalPledge" class="radio-inline" checked="checked">Total Pledge Amount</input>
+                  </label>
+                  <label>
+                    <input type="radio" name="inlineRadioOptions" value="perLap" class="radio-inline">Pledge Per Lap</input>
+                  </label>
                 </div>
-            </div>
 
+                <button type="button" id="donateButton" class="btn btn-primary">Donate</button>
+                <button type="button" id="cancelButton" class="btn btn-primary">Cancel</button>
 
-            <!-- <label for="example-email-input" class="col-2 col-form-label">Email:</label> -->
-            <div class="form-group">
-                <label for="formGroupEmailInput" class="col-sm-2 col-form-label">Email:</label>
-                <div class="col-sm-4">
-                    <!-- <input class="form-control donorEmail" type="email" value="youremail@example.com" id="formGroupEmailInput"> -->
-                    <input class="form-control donorEmail" type="email" id="formGroupEmailInput" placeholder="youremail@example.com">
-                </div>
-            </div>
+              </div>  <!-- end div class=form group -->
 
-            <!-- <label for="example-number-input" class="col-2 col-form-label">Number</label> -->
-            <div class="form-group">
-                <label for="formGroupPledgeInput" class="col-sm-2 col-form-label">Pledge:</label>
-                <div class="col-sm-4">
-                    <!-- <input class="form-control pledgeAmount" value="42" type="number" id="formGroupPledgeInput"> -->
-                    <input class="form-control pledgeAmount" type="number" id="formGroupPledgeInput" placeholder="42">
-                </div>
-            </div>
-
-            <div class="col-6 form-group">
-                <select id="pledgeSelect" class="custom-select">
-                  <option selected>Specify Pledge Type</option>
-                  <option value="totalPledge">Total Pledge Amount</option>
-                  <option value="perLap">Pledge Per Lap</option>
-                </select>
-            </div>
-
-            <button type="button" id="donateButton" class="btn btn-primary">Donate</button>
-            <button type="button" id="cancelButton" class="btn btn-primary">Cancel</button>
-
-          </div>
-        </div>
-
-        <div id=donorOutput>
-          <!-- <table class="table table table-striped table-sm">
-            <thead class="thead-default">
-              <tr>
-                <th>#</th>
-                <th>Donor Name</th>
-                <th>Donor Email</th>
-                <th>Pledge Amount</th>
-                <th>Total or Per Lap</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th scope="row">1</th>
-                <td>Mark Miller</td>
-                <td>Mark@email.com</td>
-                <td>$99.99</td>
-                <td>Total Pledge</td>
-              </tr>
-              <tr>
-                <th scope="row">2</th>
-                <td>Jacob Thornton</td>
-                <td>Jacob@email.com</td>
-                <td>$25.00</td>
-                <td>Total Pledge</td>
-              </tr>
-              <tr>
-                <th scope="row">3</th>
-                <td>Larry Bird</td>
-                <td>Larry@Bird.com</td>
-                <td>$5.00</td>
-                <td>Per Lap</td>
-              </tr>
-            </tbody>
-          </table> -->
-        </div>
+            </div>  <!-- end div id=userForm --> 
+          </div> <!-- end class=form-group row -->
+        </div>  <!-- end container -->
 
     	<!-- jQuery first, then Tether, then Bootstrap JS. -->
-    	<!-- Bootstrap Required ??? All ???  -->
     	<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
 
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+		  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
 
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+		  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 		
     	<script type="text/javascript" src="manageDonors.js"></script>
       <script type="text/javascript" src="donorIntake.js"></script>
@@ -120,3 +64,4 @@
       <script type="text/javascript" src="main.js"></script>
     </body>
 </html>
+

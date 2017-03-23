@@ -6,8 +6,11 @@ var DonorsManager = (function (oldManager) {
 	oldManager.writeToDOM =  function (donorsArray) {
 		console.log("in writeToDOM");
 		
-		var tableHeadString =  `<h4>Donor Pledges</h4>`;
-		tableHeadString += `<table class="table table table-striped table-sm">`;
+		// var tableHeadString =  `<div class="col-6"><h4>Donor Pledges</h4>`;
+		// var tableHeadString =  `<div class="col-md-6"><h4>Donor Pledges</h4>`;
+		var tableHeadString =  `<div><h4>Donor Pledges</h4>`;
+		// tableHeadString += `<table class="table table table-striped table-sm">`;
+		tableHeadString += `<table class="table table table-striped">`;
 		tableHeadString += `<thead class="thead-default">`;
 		tableHeadString += `<tr>`;
 		tableHeadString += `<th>#</th>`;
@@ -23,7 +26,7 @@ var DonorsManager = (function (oldManager) {
  
 		for (var i=0; i<donorsArray.length; i++) {
 			donorString += `<tr>`;
-		    donorString += `<th scope="row">1</th>`;
+		    donorString += `<th scope="row">${i+1}</th>`;
 		    donorString += `<td>${donorsArray[i].name}</td>`;
 		    donorString += `<td>${donorsArray[i].email}</td>`;
 		    donorString += `<td>$${donorsArray[i].pledge}</td>`;
@@ -31,7 +34,7 @@ var DonorsManager = (function (oldManager) {
 		    donorString += `</tr>`;
 		}
 		  	donorOutputTable.innerHTML = tableHeadString + donorString + `</tbody>
-          </table>`;
+          </table></div>`;
 
 	};
 
@@ -39,39 +42,5 @@ var DonorsManager = (function (oldManager) {
 
 })(DonorsManager || {});
 
-// <table class="table table table-striped table-sm">
-//             <thead class="thead-default">
-//               <tr>
-//                 <th>#</th>
-//                 <th>Donor Name</th>
-//                 <th>Donor Email</th>
-//                 <th>Pledge Amount</th>
-//                 <th>Total or Per Lap</th>
-//               </tr>
-//             </thead>
-//             <tbody>
-//               <tr>
-//                 <th scope="row">1</th>
-//                 <td>Mark Miller</td>
-//                 <td>Mark@email.com</td>
-//                 <td>$99.99</td>
-//                 <td>Total Pledge</td>
-//               </tr>
-//               <tr>
-//                 <th scope="row">2</th>
-//                 <td>Jacob Thornton</td>
-//                 <td>Jacob@email.com</td>
-//                 <td>$25.00</td>
-//                 <td>Total Pledge</td>
-//               </tr>
-//               <tr>
-//                 <th scope="row">3</th>
-//                 <td>Larry Bird</td>
-//                 <td>Larry@Bird.com</td>
-//                 <td>$5.00</td>
-//                 <td>Per Lap</td>
-//               </tr>
-//             </tbody>
-//           </table>
 
 

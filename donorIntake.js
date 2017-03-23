@@ -6,6 +6,7 @@ var DonorsManager = (function (oldManager) {
 	var thisDonorEmail = document.getElementById("formGroupEmailInput");
 	var thisDonorPledge = document.getElementById("formGroupPledgeInput");
 	var thisDonorPledgeType = document.getElementById("pledgeSelect");
+	var thisDonorPledgeType = document.getElementsByName("inlineRadioOptions");
 	var thisDonorInfo = [];
 
 	// function reads the information entered by the Donor
@@ -30,16 +31,14 @@ var DonorsManager = (function (oldManager) {
 	// RETURNS to <processDonorInput>
 	oldManager.getDonationType = function() {
 
-		if (thisDonorPledgeType.options.selectedIndex === 1) { // "Total Pledge Amount"
-			return "Total";
+		for (var i=0; i<2; i++) {
+			if (thisDonorPledgeType[i].checked) {
+				return "Total"; 
 
-		} else if (thisDonorPledgeType.options.selectedIndex === 2) { //"Pledge Per Lap"
-			return "Per Lap";
-
-		} else { // user did not specify / select "Total" as default
-			return "Total";
-
-		}// end <else>
+			} else {
+				return "Per Lap";
+			}
+		}
 	}; // end <getDonationType>
 
 	return oldManager;
