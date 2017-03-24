@@ -1,18 +1,18 @@
 # NSS IIFE Bootstrap
 
 ### Walk-A-Thon Donations Project Description 
-Upon launch, application 
+Upon launch, this application 
 - writes current donor information that is stored in an object array to a table, displayed to the left (or the top) of the screen, and 
-- displays an input form for a user to enter information as a new donor for the Walk-A-Thon. The application validates the information given on the form, then adds the new donor to the object array and rewrites the updated array to the DOM. 
+- displays an input form for a user to enter information as a new donor for the Walk-A-Thon. The application validates the information input on the form, then adds the new donor to the object array and rewrites the updated array to the DOM. 
 
 #### Walk-A-Thon Screen Shot at Launch, Desktop Size 
-![Walk-A-Thon Screen Shot at Launch, Desktop Size](...)
+![Walk-A-Thon Screen Shot at Launch, Desktop Size](https://raw.githubusercontent.com/SMITHsharon/IIFEBoostrap/screens/screens/Walk-A-Thon%20Donations%20Screen%20at%20Launch%2C%20Desktop%20Size.png)
 
 #### Walk-A-Thon Screen Shot After Adding Donors, Tablet Size, Landscape Orientation
-![Walk-A-Thon Screen Shot After Adds, Landscape](...)
+![Walk-A-Thon Screen Shot After Adds, Landscape](https://raw.githubusercontent.com/SMITHsharon/IIFEBoostrap/screens/screens/Walk-A-Thon%20Screen%20Shot%20After%20Adds%2C%20Tablet%20Size.png)
 
 #### Walk-A-Thon Screen Shot After Adds, Mobile Vertical Orientation
-![Walk-A-Thon Screen Shot After Adds, Vertical](...)
+![Walk-A-Thon Screen Shot After Adds, Vertical](https://raw.githubusercontent.com/SMITHsharon/IIFEBoostrap/screens/screens/Walk-A-Thon%20Screen%20Shot%20After%20Adds%2C%20Vertical%20Orientation.png)
 
 
 ### Project Specs
