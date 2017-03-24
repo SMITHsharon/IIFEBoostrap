@@ -15,10 +15,7 @@ var DonorsManager = (function (oldManager) {
 	// then clears the user input fields to the placeholder state
 	oldManager.writeToDOM =  function (donorsArray) {
 		
-		// var tableHeadString =  `<div class="col-6"><h4>Donor Pledges</h4>`;
-		// var tableHeadString =  `<div class="col-md-6"><h4>Donor Pledges</h4>`;
 		var tableHeadString =  `<div><h4>Donor Pledges</h4>`;
-		// tableHeadString += `<table class="table table table-striped table-sm">`;
 		tableHeadString += `<table class="table table table-striped">`;
 		tableHeadString += `<thead class="thead-default">`;
 		tableHeadString += `<tr>`;

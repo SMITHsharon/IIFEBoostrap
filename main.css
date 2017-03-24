@@ -1,7 +1,6 @@
 
 body {
 	background-color: azure;
-	font-size: 0.75em;
 }
 
 h1 {
@@ -9,17 +8,21 @@ h1 {
 	text-align: center;
 }
 
-/*#donorOutput, #userForm {
-	margin: 1% 1% 1% 1%;
-}*/
-
 input {
-	margin-right: 2%;
+	margin-left: 3%;
+}
+
+.radio-button-row {
+	margin-top: 2%;
+}
+
+.btn-primary {
+	margin-top: 2%;
+	margin-left: auto;
 }
 
 #donorOutput {
 	padding-right: 1%;
-	/*margin-right: 1%;*/
 }
 
 
