@@ -20,13 +20,13 @@ Upon launch, this application
 - Creates a donation submission page for a Walk-A-Thon that allows donors to enter their name, email and dollar amount, and whether their donation is *Total Pledge Amount*, or *Per Lap*
 
 #### functionality implemented in `JavaScript` 
-- The donor information is stored in a private object array, `donorsArray`, in an `iife`. 
+- The donor information is stored in a private object array, `donorsArray`, in an `iife`
 - `donorsArray` contains content type as keys and user submitted information as values: 
 `{name: "John Doe", email: "johndoe@me.com", pledge: "99", type: "Total"}`
 - `donorsArray` can be accessed only by the `iife` method `getDonors`
 - New donors are added to `donorsArray` via the `iife` method `addDonor`, which accepts an array that holds the values the user enters on the input screen
 - `donorIntake.js` processes the information entered by the user on the input screen, including verifying the information is valid
-- `donorOutput.js` writes the contents of `donorsArray` to the DOM. 
+- `donorOutput.js` writes the contents of `donorsArray` to the DOM
 
 #### Styling :: `Bootstrap`
 Used `Bootstrap`'s grid system and styling classes to achieve:
