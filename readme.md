@@ -17,19 +17,19 @@ Upon launch, this application
 
 ### Project Specs
 #### `html` structure and definitions
-- Created a donation submission page for a Walk-A-Thon that allows donors to enter their name, email and dollar amount, and whether their donation is *Total Pledge Amount*, or *Per Lap*
+- Creates a donation submission page for a Walk-A-Thon that allows donors to enter their name, email and dollar amount, and whether their donation is *Total Pledge Amount*, or *Per Lap*
 
-#### functionality implemented in `javascript` 
-- The donor information is stored in a private object array, `donorsArray`, in an IIFE. 
+#### functionality implemented in `JavaScript` 
+- The donor information is stored in a private object array, `donorsArray`, in an `iife`. 
 - `donorsArray` contains content type as keys and user submitted information as values: 
 `{name: "John Doe", email: "johndoe@me.com", pledge: "99", type: "Total"}`
-- `donorsArray` can be accessed only by the IIFE method `getDonors`.
-- New donors are added to `donorsArray` via the IIFE method `addDonor`, that accepts an array that holds the values the user entered on the input screen. 
-- `donorIntake.js` processes the information entered by the user on the input screen, including verifying that information is valid. 
+- `donorsArray` can be accessed only by the `iife` method `getDonors`
+- New donors are added to `donorsArray` via the `iife` method `addDonor`, which accepts an array that holds the values the user enters on the input screen
+- `donorIntake.js` processes the information entered by the user on the input screen, including verifying the information is valid
 - `donorOutput.js` writes the contents of `donorsArray` to the DOM. 
 
 #### Styling :: `Bootstrap`
-Used Bootstrap's grid system and styling classes to achieve:
+Used `Bootstrap`'s grid system and styling classes to achieve:
 - at desktop size, the table displays on the left, the user input form on the right, with some space around the sides
 - the page has the same display on a tablet in landscape mode, but with no space at the sides
 - on mobile/vertical tablet the table displays above the form
@@ -37,10 +37,10 @@ Used Bootstrap's grid system and styling classes to achieve:
 
 
 ### Technologies Used
-- html
-- css
-- javascript
-- Bootstrap
+- `html`
+- `css`
+- `JavaScript`
+- `Bootstrap`
 
 
 ### How To View The Screen 
@@ -48,12 +48,9 @@ Used Bootstrap's grid system and styling classes to achieve:
 ```
 git clone https://github.com/SMITHsharon/IIFEBoostrap.git
 cd iifeBootstrap
-npm install http-server -g
 http-server -p 8080
+This will show in your browser at: http://localhost:8080
 ```
-
-This will show in your browser at: `http://localhost:8080`
-
 
 ### Contributor
 [Sharon Smith](https://github.com/SMITHsharon)
