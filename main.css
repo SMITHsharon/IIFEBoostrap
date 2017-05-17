@@ -1,0 +1,29 @@
+
+body {
+	background-color: azure;
+}
+
+h1 {
+	margin: 2%;
+	text-align: center;
+}
+
+input {
+	margin-left: 3%;
+}
+
+.radio-button-row {
+	margin-top: 2%;
+}
+
+.btn-primary {
+	margin-top: 2%;
+	margin-left: auto;
+}
+
+#donorOutput {
+	padding-right: 1%;
+}
+
+
+

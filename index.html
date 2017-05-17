@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+    	<title>NSS IIFE Bootstrap Exercise</title>
+
+    	<!-- Latest compiled and minified CSS -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    	<link rel="stylesheet" type="text/css" href="main.css">
+    </head>
+
+    <body>
+    	<h1>Walk-A-Thon Donation Information</h1>
+
+        <div class="container">
+          <div class="form-group row">
+
+            <div id="donorOutput" class="form-group col-md-6 table-bordered"></div>
+
+            <div id="userForm" class="col-md-6 table-bordered">
+
+              <h4>Donor Information</h4>
+
+              <div class="form-group">
+
+
+                <div class="row">
+    
+                    <input id="formGroupNameInput" class="text-input alpha-inputs" placeholder="Your Name">
+                    
+                    <input type="email" id="formGroupEmailInput" class="text-input alpha-inputs" placeholder="youremail@here.com">
+                    
+                    <input type="number" id="formGroupPledgeInput" class="text-input alpha-inputs" placeholder="$42 Pledge Amount">
+
+                </div>
+
+
+                <div class="row radio-button-row">
+                  <div class="col-sm-4">
+                    <input type="radio" name="inlineRadioOptions" value="totalPledge" class="radio-inline" checked="checked"> Total Pledge Amount</input>
+                  </div>
+                  <div class="col-sm-4">
+                    <input type="radio" name="inlineRadioOptions" value="perLap" class="radio-inline"> Pledge Per Lap</input>
+                  </div>
+                </div>
+
+
+                <button type="button" id="donateButton" class="btn btn-primary">Donate</button>
+                <button type="button" id="cancelButton" class="btn btn-primary">Cancel</button>
+
+
+              </div>  <!-- end div class=form group -->
+
+            </div>  <!-- end div id=userForm --> 
+          </div> <!-- end div class=form-group row -->
+        </div>  <!-- end div class=container -->
+
+       <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    	
+      <!-- Latest compiled and minified JavaScript -->
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+		
+    	<script type="text/javascript" src="manageDonors.js"></script>
+      <script type="text/javascript" src="donorIntake.js"></script>
+      <script type="text/javascript" src="donorOutput.js"></script>
+      <script type="text/javascript" src="main.js"></script>
+    </body>
+</html>
+

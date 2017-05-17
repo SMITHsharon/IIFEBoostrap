@@ -30,6 +30,7 @@ Upon launch, this application
 
 #### Styling :: `Bootstrap`
 Used `Bootstrap`'s grid system and styling classes to achieve:
+
 - at desktop size, the table displays on the left, the user input form on the right, with some space around the sides
 - the page has the same display on a tablet in landscape mode, but with no space at the sides
 - on mobile/vertical tablet the table displays above the form
